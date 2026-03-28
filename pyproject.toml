@@ -12,7 +12,7 @@ license = {text = "MIT"}
 authors = [
 	{ name = "Irfan Haider", email = "irfanhaider.expert@gmail.com" }
 ]
-keywords = ["pip", "package manager", "cli", "python", "update", "scan" "pipman" "pipmancli" "pipman-cli"]
+keywords = ["pip", "package manager", "cli", "python", "update", "scan", "pipman", "pipmancli", "pipman-cli"]
 classifiers = [
 	"Programming Language :: Python :: 3",
 	"License :: OSI Approved :: MIT License",
