@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipman-cli"
+version = "1.0.1"
+description = "Ultimate Python Package Manager (Pipman-CLI): Intelligent, cross-platform, beautiful CLI for Python packages."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+	{ name = "Irfan Haider", email = "irfanhaider.expert@gmail.com" }
+]
+keywords = ["pip", "package manager", "cli", "python", "update", "scan" "pipman" "pipmancli" "pipman-cli"]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Intended Audience :: Developers",
+	"Environment :: Console",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+	"Topic :: System :: Software Distribution"
+]
+dependencies = [
+	"requests"
+]
+
+[tool.setuptools.packages.find]
+include = ["pipman*"]
+
+[project.urls]
+"Homepage" = "https://github.com/Irfanh-dev/pipman-cli"
+"Bug Tracker" = "https://github.com/Irfanh-dev/pipman-cli/issues"
+
+[project.scripts]
+pipmancli = "pipman.main:main"
